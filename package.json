@@ -10,18 +10,15 @@
     "build:docker:vcclient": "date +%Y%m%d%H%M%S > docker_vcclient/dummy && DOCKER_BUILDKIT=1 docker build -f docker_vcclient/Dockerfile docker_vcclient/ -t vcclient",
     "push:docker": "bash script/001_pushDocker.sh",
     "push:docker:trainer": "bash script/002_pushDockerTrainer.sh",
-    "push:docker:vcclient": "bash script/003_pushDockerVCClient.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
     "url": "git+https://github.com/w-okada/voice-changer.git"
   },
   "keywords": [
     "voice conversion"
   ],
   "author": "wataru.okada@flect.co.jp",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/w-okada/voice-changer/issues"
   },
